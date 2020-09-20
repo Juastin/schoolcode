@@ -92,11 +92,98 @@
 //print ('Mathilde eet er '.$mathilde.$mathildehoeveel);
 //print ('Sharon eet er '.$mathilde.$sharonhoeveel);
 // Opdracht 7
-$stelling1 = "Olifant schrijf je met een O";
-$waarheid1 = TRUE;
-print ("Stelling 1 (" . $stelling1 . ") is ");
-if ($waarheid1) {
-    print (" WAAR.");
-} else {
-    print (" NIET WAAR.");
-}
+//$stelling1 = "Olifant schrijf je met een O";
+//$stelling2 = "Cocacola bevat nogsteeds cocaine";
+//$waarheid1 = TRUE;
+//$waarheid2 = FALSE;
+//print ("Stelling 1 (" . $stelling1 . ") is ");
+//if ($waarheid1) {
+//    print (" WAAR.");
+//} else {
+//    print (" NIET WAAR.");
+//}
+//print ("Stelling 2 (" . $stelling2 . ") is ");
+//if ($waarheid2) {
+//    print (" WAAR.");
+//} else {
+//    print (" NIET WAAR.");
+//}
+// Opdracht 8
+//$regen = true;
+//$meerijden = false;
+//if ($regen == true) {
+//    if ($meerijden == true){
+//        print ('Vandaag kan ik met iemand meerijden');
+//    }
+//    else {
+//        print ('Vandaag moet ik met de bus');
+//    }
+//}
+//else {
+//    print ('Vandaag ga ik fietsen');
+//}
+// Opdracht 9
+//function PrijsBereken($dag, $abbo, $km){
+//    if($dag == 'weekend' && $abbo == 'weekend') {
+//        print ('Je kan gratis reizen vandaag');
+//    }
+//    if($dag == 'weekdag' && $abbo == 'week') {
+//        print ('Je kan gratis reizen vandaag');
+//    }
+//    else {
+//        $prijs = 0.1 * $km;
+//        $prijs = $prijs / 100 * 60;
+//        print ('Je betaald vandaag ' . $prijs. ' euro voor je reis');
+//    }
+//}
+//PrijsBereken('weekend', 'week', 120);
+// Opdracht 10
+//$iemandJarig = FALSE;
+//$aantalWekenZonderFeest = 3;
+//$zomervakantie = FALSE;
+//
+//if ($iemandJarig || $zomervakantie || $aantalWekenZonderFeest > 2) {
+//    print("deze week is het feest");
+//} else {
+//    print("deze week is er geen feest");
+//}
+// Opdracht 11
+//$aantalKoffie = 0;
+//$koffieIsVers = FALSE;
+//$laatInDeAvond = FALSE;
+//
+//if($aantalKoffie == 0) {
+//    print("Ik neem koffie");
+//} else {
+//    if ($laatInDeAvond == TRUE || $koffieIsVers == FALSE || $aantalKoffie >= 5) {
+//        print("Ik neem geen koffie");
+//    } else {
+//        print("Ik neem koffie");
+//    }
+//}
+// Opdracht 12
+//$hetIsOchtend = TRUE;
+//$mamaBelt = TRUE;
+//$ikSlaap = TRUE;
+//
+//if ($ikSlaap == TRUE) {
+//    print ('Rot op met die telefoon');
+//}
+//elseif ($hetIsOchtend == TRUE && $mamaBelt == FALSE){
+//    print ('Rot nogsteeds op met die telefoon');
+//}
+//else {
+//    print('Met justin?');
+//}
+// Opdracht 13
+//function PrijsBereken($dag, $abbo, $km){
+//    if (($dag == 'weekend' && $abbo == 'weekend') || ($dag == 'weekdag' && $abbo == 'week')) {
+//        print ('Je kan gratis reizen vandaag');
+//    }
+//    else {
+//        $prijs = 0.1 * $km / 100 * 60;
+//        print ('Je betaald vandaag ' . $prijs. ' euro voor je reis');
+//    }
+//}
+//PrijsBereken('weekdag', 'weekend', 12000);
+// Opdracht 14
