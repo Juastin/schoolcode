@@ -32,7 +32,7 @@
 //    print ("niet stemmen. Want je bent te jong");
 //}
 // Opdracht 4
-//Print("Hoe warm wordt het?\n");
+//print("Hoe warm wordt het?\n");
 //$temperatuur = trim(fgets(STDIN));
 //if ($temperatuur > 25) {
 //    print ("We gaan naar het strand.");
@@ -185,5 +185,25 @@
 //        print ('Je betaald vandaag ' . $prijs. ' euro voor je reis');
 //    }
 //}
-//PrijsBereken('weekdag', 'weekend', 12000);
+//PrijsBereken('weekdag', 'weekend', 120);
 // Opdracht 14
+//function isMarkBoos($aantal, $gebied){
+//    if ($aantal < 3) {
+//        print ('Mark is boos');
+//    }
+//    if ($aantal >= 3 && $aantal <= 5) {
+//        print ('Mark is humeurig');
+//    }
+//    if ($aantal > 5) {
+//        if($gebied == 'onderwijs'){
+//            print ('Mark is boos');
+//        }
+//        if ($gebied == 'zorg'){
+//            print ('Mark is verdrietig');
+//            }
+//        }
+//    else {
+//        print ('Mark is blij');
+//    }
+//}
+//isMarkBoos($aantal = 8, $gebied = 'zorg');
