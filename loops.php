@@ -34,3 +34,32 @@
 //   print ("$leng\n");
 //}
 // Opdracht 2
+//function Dobbel($punten) {
+//    $dobbel = rand(1, 6);
+//    $game = true;
+//    print ('Je hebt ' . $dobbel . " gegooid\n");
+//    while ($dobbel % 2 == 0 && $game == true) {
+//        for ($i = 0; $i < $dobbel; $i++) {
+//            $kaart = rand(1, 52);
+//            print ('De waarde van de kaart is: ' . $kaart . "\n");
+//            $punten += $kaart;
+//        }
+//        $game = false;
+//    }
+//    print ('Totaal aantal punten: ' . $punten);
+//}
+//Dobbel($punten);
+//$punten = 0;
+// Opdracht 3
+//function RenteVerdubbel($verm, $rente){
+//    $strverm = $verm;
+//    $eindverm = $verm*2;
+//    $factor = 1 + ($rente / 100);
+//    $jaar = 0;
+//    while ($verm < $eindverm) {
+//        $verm *= $factor;
+//        $jaar++;
+//    }
+//    print ("na $jaar heb ik mijn $strverm verdubbeld");
+//}
+//RenteVerdubbel(200, 4);
