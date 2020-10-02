@@ -177,12 +177,17 @@
 //}
 // Opdracht 13
 //function PrijsBereken($dag, $abbo, $km){
+//    $korting = 0.6;
 //    if (($dag == 'weekend' && $abbo == 'weekend') || ($dag == 'weekdag' && $abbo == 'week')) {
 //        print ('Je kan gratis reizen vandaag');
 //    }
+//    elseif ($abbo == 'weekend' || 'week') {
+//        $prijs = 0.1 * $km * $korting;
+//        print ('Je betaald vandaag ' .$prijs. ' euro voor je reis');
+//    }
 //    else {
-//        $prijs = 0.1 * $km / 100 * 60;
-//        print ('Je betaald vandaag ' . $prijs. ' euro voor je reis');
+//        $prijs = 0.1 * $km;
+//        print ('Je betaald vandaag ' .$prijs. ' euro voor je reis');
 //    }
 //}
 //PrijsBereken('weekdag', 'weekend', 120);
