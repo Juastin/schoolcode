@@ -81,13 +81,13 @@
 //}
 //print $som;
 // Opdracht 5g
-$getallen = [1, 8, 12, 7, 14, -13, 8, 1, -1, 14, 7];
-$maxgetal = max($getallen);
-foreach($getallen as $getal){
-    if ($getal < $maxgetal){
-        $unset = array_search($getal, $getallen);
-        unset($getallen[$unset]);
-    }
-}
-print_r(array_count_values($getallen);
-// Opdracht 6
+//$getallen = [1, 8, 12, 7, 14, -13, 8, 1, -1, 14, 7];
+//$maxgetal = max($getallen);
+//foreach($getallen as $getal){
+//    if ($getal < $maxgetal){
+//        $unset = array_search($getal, $getallen);
+//        unset($getallen[$unset]);
+//    }
+//}
+//print_r(array_count_values($getallen);
+// Opdracht 6a
