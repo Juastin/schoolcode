@@ -89,5 +89,29 @@
 //        unset($getallen[$unset]);
 //    }
 //}
-//print_r(array_count_values($getallen);
+//print_r(array_count_values($getallen));
 // Opdracht 6a
+$telnrs = [
+    "Mickey Mouse" => "038-4699776",
+    "Guus Geluk" => "0578-121212",
+    "Donald Duck" => "010-2311512"
+];
+//print_r($telnrs);
+// Opdracht 6b & 6c & 6d
+print ('Wie krijgt een nieuw nummer? '); $naam = trim(fgets(STDIN));
+if ($naam == array_key_exists($naam, $telnrs)) {
+    print ("Wat is zijn nieuwe nummer? "); $newtel = trim(fgets(STDIN));
+    if (is_string($newtel)){
+        print "HET IS EEN STRING";
+    }
+    if ($newtel !== null){
+        $newarray = [$naam => $newtel];
+        print_r($newarray);
+        array_replace($telnrs, $newarray);
+        print_r($telnrs);
+    }
+}
+else {
+    print ("Deze naam staat niet in het telefoonboek");
+}
+
