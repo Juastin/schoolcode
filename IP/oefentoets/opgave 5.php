@@ -4,7 +4,6 @@ echo "Opgave 5a.<br><br>";
 $prijsPerStuk = 1;
 $aantal = 3;
 $vasteKlant = true;
-$prijs = 0.00;
 
 
 if ($vasteKlant == true || $aantal >= 50){
@@ -23,10 +22,10 @@ else {
     $verzendkosten = $verzendkosten*$aantal;
 }
 if ($vasteKlant == true || $aantal >= 50){
-    echo ("totaalprijs: ".$prijs=(($prijsPerStuk * $aantal)*0.9)."<br>");
+    $prijs=$prijsPerStuk * $aantal *0.9;
+    echo ("totaalprijs: ".$prijs."<br>");
     echo ("verzending:".$verzendkosten."<br>");
     echo ("totaal: ".$prijs=$prijs+$verzendkosten."<br>");
-
 }
 else {
     echo ("totaalprijs: ".$prijs =($prijsPerStuk * $aantal));
