@@ -5,18 +5,18 @@
 #	(SELECT cursus 
 #	FROM Uitvoering)
 -- # 2
-SELECT naam
-FROM Medewerker
-WHERE mnr IN 
-	(SELECT hoofd 
-	FROM Afdeling 
-	WHERE anr = 10)
+#SELECT naam
+#FROM Medewerker
+#WHERE mnr IN 
+#	(SELECT hoofd 
+#	FROM Afdeling 
+#	WHERE anr = 10)
 # 3
 #SELECT mnr 
 #FROM Medewerker
 #WHERE chef IN 
-	#(SELECT hoofd 
-	#FROM Afdeling)
+#	(SELECT hoofd 
+#	FROM Afdeling)
 # 4
 #SELECT naam
 #FROM Medewerker
