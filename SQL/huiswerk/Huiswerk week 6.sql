@@ -32,3 +32,5 @@
 #FROM Medewerker M
 #LEFT JOIN Afdeling A ON M.mnr = A.hoofd
 #ORDER BY M.naam
+# 1.
+
