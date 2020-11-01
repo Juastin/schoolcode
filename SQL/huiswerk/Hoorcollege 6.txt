@@ -1,0 +1,67 @@
+*INSERT INTO donor (donornr, naam, geslacht, bloedgroep, status)
+VALUES ('AV993', 'Koning', 'V', 'A+', 0)
+
+*UPDATE donor 
+SET (bloedgroep)
+VALUES ('AB+')
+WHERE donornr = 'BB889'
+
+				UPDATE Donor
+				SET naam = ‘Tammer’, bloedgroep = ‘AB+’
+				WHERE donornr = ‘BB889’
+	
+
+*UPDATE donor 
+SET status = 0
+VALUES (1)
+WHERE donornr IN (SELECT donornr 
+			FROM afname 
+			WHERE datum >= '2018-01-01' AND succes = 1)
+
+$DELETE FROM donor
+WHERE naam = 'Obikulu'
+
+$DELETE FROM donor 
+WHERE donornr NOT IN (SELECT donornr FROM afname)
+
+$SELECT naam, datum 
+FROM donor
+JOIN afname ON a.donornr = d.donornr
+
+$SELECT naam 
+FROM donor D
+LEFT JOIN afname A ON D.donornr = A.donornr
+WHERE a.donornr IS NULL
+
+*SELECT AVG(hb), MIN(hb)
+FROM afname
+WHERE succes = 1
+
+$SELECT COUNT(*)
+FROM donor
+WHERE donornr IN (SELECT donornr FROM afname WHERE succes = 1)
+AND WHERE geslacht = 'V'
+
+SELECT bloedgroep
+FROM donor
+WHERE donornr IN (SELECT donornr FROM afname WHERE succes = 1)
+GROUP BY bloedgroep
+
+*SELECT donornr, COUNT(*) aantal
+FROM afname
+WHERE succes = 1
+GROUP BY donornr
+HAVING COUNT(*) >= 10
+ORDER BY donornr DESC ||| AFLOPEND = DESC |||
+
+*SELECT naam, AVG(succes)*100 = PERCENTAGE 
+FROM donor D
+JOIN afname A ON A.donornr = D.donornr
+GROUP BY naam
+
+*SELECT naam
+FROM donor
+GROUP BY naam
+HAVING AVG(succes) > (SELECT AVG(succes) FROM afname)
+
+
